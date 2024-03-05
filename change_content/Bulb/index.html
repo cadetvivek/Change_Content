@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Content</title>
+    <style>
+      h2 {
+        text-align: center;
+        margin-top: 5px;
+      }
+      .container {
+        text-align: center;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h2>The bulb turn on of</h2>
+    <div class="container">
+      <img
+        id="OF"
+        src="images/bulb_of.jpg"
+        height="200px"
+        width="200px"
+        alt="bult_of"
+      />
+    </div>
+    <button id="toogle">turn on</button>
+  </body>
+  <script>
+
+let btn = document.getElementById("toogle")
+ let bulb1 =   document.getElementById("OF")
+ btn.addEventListener('click',toogle)
+ function toogle(e){
+    if(btn.textContent.includes('On')){
+    bulb1.src="images/bulb_on.jpg"
+        btn.textContent="Turn Off"
+    
+    }else{
+        bulb1.src="images/bulb_of.jpg"
+        btn.textContent="Trun On"
+    }
+ }
+  
+
+
+  
+
+  </script>
+</html>
